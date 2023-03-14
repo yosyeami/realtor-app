@@ -6,7 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "build": "yarn migrate:deploy && next build",
+    "build": "npm run migrate:deploy && nest build",
     "migrate:deploy": "prisma migrate deploy --preview-feature",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
